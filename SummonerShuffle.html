@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summoner Shuffle</title>
+    <link rel="stylesheet" href="SummonerShuffle.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Summoner Shuffle</h1>
+      <button class="tooltip createButton" role="button" id="random-btn">
+        <span class="text">CREATE TEAM - RANDOM</span>
+        <span class="tooltiptext_random">
+          Create a random team with no role restrictions.
+        </span>
+      </button>
+      <button class="tooltip createButton" role="button" id="role-btn">
+        <span class="text">CREATE TEAM - RESPECT ROLES</span>
+        <span class="tooltiptext_respectroles">
+          Create a team with champions in their preferred roles.
+        </span>
+      </button>
+      <script src="javascript/random.js"></script>
+      <script src="javascript/roleRandom.js"></script>
+    </header>
+    <ul>
+      <li>
+        <img id="Top" src="https://d2ly2ivukf9hi9.cloudfront.net/defaultIcons/poro2.png" class="champIcon" />
+        <div id="Top Name" class="champName">Champ 1</div>
+        <div class="roleTitle">Top</div>
+        <img src="https://d2ly2ivukf9hi9.cloudfront.net/roleIcons/Top.png" class="roleIcon" />
+      </li>
+      <li>
+        <img id="Jungle" src="https://d2ly2ivukf9hi9.cloudfront.net/defaultIcons/poro2.png" class="champIcon" />
+        <div id="Jungle Name" class="champName">Champ 2</div>
+        <div class="roleTitle">Jungle</div>
+        <img src="https://d2ly2ivukf9hi9.cloudfront.net/roleIcons/Jungle.png" class="roleIcon" />
+      </li>
+      <li>
+        <img id="Mid" src="https://d2ly2ivukf9hi9.cloudfront.net/defaultIcons/poro2.png" class="champIcon" />
+        <div id="Mid Name" class="champName">Champ 3</div>
+        <div class="roleTitle">Middle</div>
+        <img src="https://d2ly2ivukf9hi9.cloudfront.net/roleIcons/Mid.png" class="roleIcon" />
+      </li>
+      <li>
+        <img id="Bot" src="https://d2ly2ivukf9hi9.cloudfront.net/defaultIcons/poro2.png" class="champIcon" />
+        <div id="Bot Name" class="champName">Champ 4</div>
+        <div class="roleTitle">Bot</div>
+        <img src="https://d2ly2ivukf9hi9.cloudfront.net/roleIcons/Bot.png" class="roleIcon" />
+      </li>
+      <li style="--accent-color: #091428">
+        <img id="Support" src="https://d2ly2ivukf9hi9.cloudfront.net/defaultIcons/poro2.png" class="champIcon" />
+        <div id="Support Name" class="champName">Champ 5</div>
+        <div class="roleTitle">Support</div>
+        <img src="https://d2ly2ivukf9hi9.cloudfront.net/roleIcons/Support.png" class="roleIcon" />
+      </li>
+    </ul>
+  </body>
+  <footer>
+    <p>
+      <a
+        style="color: rgb(90, 189, 255); font-size: 11px"
+        href="https://www.artstation.com/artwork/yJwq0J"
+        >Background by Milena Vasyukova</a
+      >
+    </p>
+  </footer>
+</html>

@@ -1,0 +1,173 @@
+
+@font-face {
+    font-family: 'BeaufortforLOL';
+    src: url('https://d2ly2ivukf9hi9.cloudfront.net/fonts/BeaufortforLOL-Bold.woff') format('woff'),
+    url('fonts/BeaufortforLOL-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'BeaufortforLOL-Light';
+  src: url('https://d2ly2ivukf9hi9.cloudfront.net/fonts/BeaufortforLOL-Light.woff') format('woff'),
+  url('fonts/BeaufortforLOL-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Spiegel_TT';
+  src: url('https://d2ly2ivukf9hi9.cloudfront.net/fonts/Spiegel_TT_Regular.woff') format('woff'),
+  url('fonts/BeaufortforLOL-Bold.woff') format('woff');
+}
+
+
+header {
+  background-color: rgba(10, 20, 40, 1); 
+  color: white; 
+  padding: 1rem; 
+  text-align: center; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  font-family: 'BeaufortforLOL';
+}
+
+body {
+  background-image: url("https://d2ly2ivukf9hi9.cloudfront.net/background/grafit-studio-mid-lane-final.jpg");
+  background-size: cover; 
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+ul {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 17.7em;
+  padding: 20px;
+}
+
+ul li {
+  flex: 1; 
+  margin: 1rem; 
+  padding: 3rem;
+  background: rgba(10, 20, 40, 1);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.9) 0.3rem,
+    rgba(0, 0, 0, 0) 5rem
+  );
+  outline: 1px solid #CDFAFA;
+  clip-path: polygon(0 0, 160% 0%, 120% 89%, 50% 100%, -3000% -350%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ul li:nth-child(1) { height: 450px; }
+ul li:nth-child(2) { height: 500px; }
+ul li:nth-child(3) { height: 550px; }
+ul li:nth-child(4) { height: 500px; }
+ul li:nth-child(5) { height: 450px; }
+
+
+ul li .champIcon {
+  margin-top: 30px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  outline: 3px groove #785A28;
+  
+}
+
+ul li .champName {
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 15px;
+  font-family: 'BeaufortforLOL';
+}
+
+ul li .roleTitle {
+  color: white;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-family: 'Spiegel_TT';
+}
+
+ul li .roleIcon {
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.createButton {
+  font-family: 'BeaufortforLOL';
+  border-radius: 4px;
+  padding: 8px 20px;
+  background-color:  #0397AB;
+  color: white;
+  border: 2px solid #0397AB; 
+  cursor: pointer;
+}
+
+.createButton:hover {
+  background-color: #005A82; 
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: left;
+  padding: 10px;
+  color: white;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext_random {
+  visibility: hidden;
+  width: 230px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  text-align: center;
+  font-family: 'Spiegel_TT';
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+}
+
+.tooltip .tooltiptext_respectroles {
+  visibility: hidden;
+  width: 230px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  text-align: center;
+  font-family: 'Spiegel_TT';
+  padding: 5px 0;
+
+
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext_respectroles  {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext_random  {
+  visibility: visible;
+}
+
